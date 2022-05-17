@@ -9,7 +9,7 @@
   background-image: url("bit.jpg");
 
   /* Set a specific height */
-  min-height: 500px; 
+  min-height: 400px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -23,40 +23,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav
+    class="
+        navbar
+        flex-row
+        justify-content-between
+        navbar-expand-lg navbar-light
+        bg-dark
+    "
+>
 
 
-<div class="theGroup">
-<h1 class="Deselect"><p font-family: 'Rubik Mono One', sans-serif; class="tatle">Welcome to eran coins</p></h1>
-        <select class="form-select" size="3" aria-label="size 3 select example" id="select">
-          <option selected>בחר:</option>
-          <option value="coins">מטבעות</option>
-          <option value="liveReports">אודות</option>
-          <option value="report">דוחות בזמן אמת</option>
-        </select>
-       
-        <div><button id="mainButton" type="button" class="btn btn-primary btn-lg" > הצג</button></div>
-        <br>
-        <div>
-        <input
-        type="search"
-        placeholder="Search.."
-        id="searchInput"
-      />
+    <!-- buttons : home,about,clear,show -->
+    <div>
+        <button type="button" class="btn btn-success" id="homeBtn">
+            <select class="form-select" size="3" aria-label="size 3 select example" id="select">
+                <option selected>בחר:</option>
+                <option value="coins">מטבעות</option>
+                <option value="liveReports">אודות</option>
+                <option value="report">דוחות בזמן אמת</option>
+              </select>
+        </button>
 
-      <button id="searchBtn" class="inline" > חפש </button>
+            <button id="showTheChoseCoints" type="button" class="btn btn-outline-light">לחץ למטבעות הנבחרים</button>
+            <button id="mainButton" type="button" class="btn btn-primary btn-lg" > הצג</button>
+            <button type="button" class="btn btn-danger" id="removeButton" > מחק</button> 
+
     </div>
-    <br>
+    <form class="form-inline my-2 my-lg-3">
+        <div class="theGroup">       
+            <br>
+            <div>
+            <input
+            type="search"
+            placeholder="Search.."
+            id="searchInput"
+          />
     
-
-        <div><button id="showTheChoseCoints" type="button" class="btn btn-outline-light">לחץ למטבעות הנבחרים</button></div>
-        <br>
-        <div><button type="button" class="btn btn-danger" id="removeButton" > מחק</button></div>
-        
-
+          <button id="searchBtn" class="inline" > חפש </button>
+        </div>
+    </form>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <h1 class="col-6 my-auto">Cryptonite</h1>
     </div>
-    <div class="imgBack">
-    <img src="PNG-images-Coins-21png.png" alt="" height="300px" width="300px">
+</div>
     </div>
+
         <div id="loading"><img src="assets/mainLoading.gif" alt=""></div>
         <div class="parallax"></div>
 

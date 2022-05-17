@@ -18,6 +18,10 @@ html, body {
 
 }
 
+h1{
+    color: aliceblue;
+}
+
 #Div1{
    display: flex;
    flex-direction: row;
@@ -239,4 +243,5 @@ justify-content: right;
 
  .Deselect{
      display:inline-block;
+     color: aqua;
  }

@@ -178,8 +178,8 @@ $("#mainButton").click(  function(){
    }
 
   let newDiv1 = document.createElement("div");
-  newDiv1.innerText="liveReports";
-   $(theMainDiv).append(newDiv1);
+  newDiv1.innerText="How does a crypto work?/n Most cryptocurrencies are based on blockchain technology, a networking protocol through which computers can work together to keep a shared, tamper-proof record of transactions. The challenge in a blockchain network is in making sure that all participants can agree on the correct copy of the historical ledger.";
+  $(theMainDiv).append(newDiv1);
   }
 
   if (select === "report") {
